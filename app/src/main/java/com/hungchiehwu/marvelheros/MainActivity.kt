@@ -23,15 +23,18 @@ class MainActivity : AppCompatActivity() {
         val switchBtn = findViewById<Button>(R.id.switchBtn)
         val characterImg = findViewById<ImageView>(R.id.characterImg)
 
+        val characterName = findViewById<TextView>(R.id.characterName)
+        val characterDesc = findViewById<TextView>(R.id.characterDesc)
+
 
         switchBtn.setOnClickListener {
             // Get character name, description, imgURL
-            getMarvelCharacter(characterImg)
+            getMarvelCharacter(characterImg, characterName, characterDesc)
         }
     }
 
 
-    private fun getMarvelCharacter(characterImg: ImageView) {
+    private fun getMarvelCharacter(characterImg: ImageView, characterNameView: TextView, characterDescView: TextView) {
         val client = AsyncHttpClient()
         val randomHeroId = heroIdList.random()
 
@@ -49,11 +52,8 @@ class MainActivity : AppCompatActivity() {
                 val characterName = characterObj.getString("name")
                 val characterDesc = characterObj.getString("description")
 
-                val nameTextView = findViewById<TextView>(R.id.characterName)
-                val descTextView = findViewById<TextView>(R.id.characterDesc)
-
-                nameTextView.text = characterName
-                descTextView.text = characterDesc
+                characterNameView.text = characterName
+                characterDescView.text = characterDesc
 
                 Glide.with(this@MainActivity)
                     .load(characterImageURL)
