@@ -7,7 +7,7 @@ Time spent: **3** hours spent in total
 
 ## Summary
 
-**Marvel Heroes** is an android app that **displays some of random character from the Marvel Comics")**
+**Marvel Heroes** is an android app that **displays some of random character from the Marvel Comics**
 
 If I had to describe this project in three (3) emojis, they would be: **🦸🤠✊**
 
@@ -32,7 +32,7 @@ My chosen API for this project is **Marvel API**.
 
 Here's a video / GIF that demos all of the app's implemented features:
 
-<img src='http://i.imgur.com/link/to/your/gif/file.gif' title='Video Demo' width='' alt='Video Demo' />
+<img src='https://i.imgur.com/KFb6ZeV.gif' title='Video Demo' width='' alt='Video Demo' />
 
 GIF created with **Kap**
 
@@ -43,7 +43,7 @@ GIF created with **Kap**
 
 ## Notes
 
-Great opportunity to call Rest API on Android to show my favorite heroes. Thanks to CodePath for creating lightweight Async HttpClient library
+Great opportunity to call Rest API on Android to show my favorite heroes. Thanks to CodePath team for creating lightweight Async HttpClient library
 
 ## License
 
